@@ -1,5 +1,33 @@
 # Changelog
 
+## [1.22.0](https://github.com/GoogleCloudPlatform/evalbench/compare/v1.21.0...v1.22.0) (2026-11-17)
+
+
+### Features
+
+* **agent:** reset the sandbox home and work_dir between trials ([#709](https://github.com/GoogleCloudPlatform/evalbench/issues/709)) ([4234154](https://github.com/GoogleCloudPlatform/evalbench/commit/423415458f1c2e9ddebdafdfabd5014c5a60d781))
+* **agent:** run num_trials trials of each scenario ([#700](https://github.com/GoogleCloudPlatform/evalbench/issues/700)) ([921c7a9](https://github.com/GoogleCloudPlatform/evalbench/commit/921c7a91453a860a1efa7a33ca78f0e4c4deac66))
+* **container:** case runner, backend interface and cancellation for per-case containers ([5b76345](https://github.com/GoogleCloudPlatform/evalbench/commit/5b763451f2ede6bf88eb1ec72f7081d920becbc1))
+* **container:** case spec, config schema and pool router for per-case containers ([9229969](https://github.com/GoogleCloudPlatform/evalbench/commit/92299699d55a38b54cd5d6a87c59ef3f9ff949f4))
+* **container:** case spec, config schema and pool router for per-case containers ([67bb209](https://github.com/GoogleCloudPlatform/evalbench/commit/67bb2097782f670af861003260b3394314d97021))
+* **container:** Kubernetes Job backend for per-case containers ([#695](https://github.com/GoogleCloudPlatform/evalbench/issues/695)) ([63f0cc1](https://github.com/GoogleCloudPlatform/evalbench/commit/63f0cc1083e30fc5a4ad998656d265f2bc009b31))
+* **dataset_quality:** tell judges about success_criteria ([#685](https://github.com/GoogleCloudPlatform/evalbench/issues/685)) ([1523a53](https://github.com/GoogleCloudPlatform/evalbench/commit/1523a532ff8ed583339d08cae9880f1d7634620e))
+
+
+### Bug Fixes
+
+* **agent:** mark agent infrastructure and simulated-user errors as unscored ([#702](https://github.com/GoogleCloudPlatform/evalbench/issues/702)) ([f320ab7](https://github.com/GoogleCloudPlatform/evalbench/commit/f320ab73464d28bc430d7e0181c7978267a6c807))
+* **agent:** report the correct summary when num_trials is above 1 ([#712](https://github.com/GoogleCloudPlatform/evalbench/issues/712)) ([18683e0](https://github.com/GoogleCloudPlatform/evalbench/commit/18683e03846ca1881acddc8b5ee478dc3a138776))
+* **auth:** use Workload Identity instead of the GKE SA key ([#703](https://github.com/GoogleCloudPlatform/evalbench/issues/703)) ([1ff849f](https://github.com/GoogleCloudPlatform/evalbench/commit/1ff849f32f5ce0709ab95727ede2d8470865146a))
+* **dataset_quality:** don't count withheld data as Incomplete Result ([926c9cf](https://github.com/GoogleCloudPlatform/evalbench/commit/926c9cf983d8aca64159c00e1ba8bafddefbdb61))
+* **dataset_quality:** don't count withheld data as Incomplete Result ([1c40016](https://github.com/GoogleCloudPlatform/evalbench/commit/1c4001611ae3c31c07b370f695f0d080f178e7bf))
+* **datasets:** split two records joined on one line in bat-interact ([de30f82](https://github.com/GoogleCloudPlatform/evalbench/commit/de30f82e1400c8e8ca5c6a5ea04b11a52604383a))
+* **datasets:** split two records joined on one line in bat-interact ([ae1c85c](https://github.com/GoogleCloudPlatform/evalbench/commit/ae1c85c82078e69ffd2b097ce7c16eac1eb05d4a))
+* **gemini_cli:** resume follow-up turns by session ID ([#699](https://github.com/GoogleCloudPlatform/evalbench/issues/699)) ([f7f909d](https://github.com/GoogleCloudPlatform/evalbench/commit/f7f909d25230ede68ef49aee602f288d7e70f766))
+* **gke:** add health probes and make the deploy single-pod safe ([0ce5185](https://github.com/GoogleCloudPlatform/evalbench/commit/0ce5185ca8f59090863547d55577511e4841a828))
+* **scorers:** raise on malformed goal_completion judge replies ([#701](https://github.com/GoogleCloudPlatform/evalbench/issues/701)) ([b6023ba](https://github.com/GoogleCloudPlatform/evalbench/commit/b6023ba84f72ff717ec9f7efd2a19df373aaef76))
+* **sessionmgr:** remove a symlinked session entry instead of walking it ([#708](https://github.com/GoogleCloudPlatform/evalbench/issues/708)) ([21f7a5c](https://github.com/GoogleCloudPlatform/evalbench/commit/21f7a5c46e31337223ebeb1df9adb88f5b2b6bee))
+
 ## [1.21.0](https://github.com/GoogleCloudPlatform/evalbench/compare/v1.20.0...v1.21.0) (2026-10-27)
 
 
